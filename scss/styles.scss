@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 85%;
+  margin: 20px auto 20px;
+}
+
+main {
+  width: 85%;
+  margin: auto;
+}
+
+.results {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card__info {
+  width: 50%;
+  margin-bottom: 20px;
+}
