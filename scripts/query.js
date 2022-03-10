@@ -12,9 +12,8 @@ const getApiData = async () => {
   });
 
   const data = await response.json();
-  console.log(data);
   const dataOrder = orderBy(data.data.allFilms.films, ["title"], ["desc"]);
-  console.log(dataOrder);
+  console.log(data);
 
   dataOrder.map(({ title, director, releaseDate }) => {
     document.querySelector(".results").innerHTML += `
@@ -25,8 +24,6 @@ const getApiData = async () => {
       </div>
     `;
   });
-
-  return data;
 };
 
 getApiData();
